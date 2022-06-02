@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/asset/style.css" />
+    <title>Voodiest Mart</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- <i id="menu-bar" class="fa-solid fa-bars"></i> -->
+        <div class="dropdown fa-solid fa-bars">
+          <ul class="dropdown-content">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#testimonial">Testomonial</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+          <h1 class="logo"><img src="assets/logo.png" alt="" height="50px" width="50px"/>Voodiest</h1>
+          <ul class="nav-bar active">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#testimonial">Testomonial</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        <div class="menu-icon">
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section class="home" id="home">
+          <div class="container_banner">
+            <div class="slide-content active">
+              <figure
+                class="bg-slide"
+                style="background: url(/assets/bg-slide-1.jpg)"
+              >
+                <figcaption class="banner">
+                  <span>Good food & takeaway, delivered to your house.</span>
+                  <h3>Best quality food only in voodiest</h3>
+                  <a href="#" class="btn-full">Buy Now</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="slide-content">
+              <figure
+                class="bg-slide" style="background-image:url(/assets/bg-slide-2.jpg) ;"
+              >
+                <figcaption class="banner">
+                  <span>Good food & takeaway, delivered to your house.</span>
+                  <h3>Best quality food only in voodiest</h3>
+                  <a href="#" class="btn-full">Buy Now</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="slide-content">
+              <figure
+                class="bg-slide"
+                style="background: url(/assets/bg-slide-3.jpg)"
+              >
+                <figcaption class="banner">
+                  <span>Good food & takeaway, delivered to your house.</span>
+                  <h3>Best quality food only in voodiest</h3>
+                  <a href="#" class="btn-full">Buy Now</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div id="prev">
+            <i class="fa-solid fa-angle-left" onclick="prev()"></i>
+          </div>
+          <div id="next">
+            <i class="fa-solid fa-angle-right" onclick="next()"></i>
+          </div>
+        </section>
+      </article>
+
+      <article>
+        <section class="services">
+          <div class="container-service">
+            <article class="service-box">
+              <i class="fa-solid fa-truck-fast"></i>
+              <h3>Fast Delivery</h3>
+              <p>
+                Fast delivery service prioritizing speed to immediately reach the destinations based on the specified/agreed time.
+              </p>
+              <a href="#" class="btn-ghost">see more</a>
+            </article>
+            <article class="service-box">
+              <i class="fa-solid fa-seedling"></i>
+              <h3>High Quality</h3>
+              <p>
+                High-quality foodstuff with minimally processed foods vegetables and fruits, whole grains, healthy fats, and healthy protein sources.
+              </p>
+              <a href="#" class="btn-ghost">see more</a>
+            </article>
+            <article class="service-box">
+              <i class="fa-solid fa-filter-circle-dollar"></i>
+              <h3>Money-Back</h3>
+              <p>
+                Money-Back where if you receive our unsatisfactory product either damaged or defective. So we open exchange for the same product or a 100% refund on the product you purchased.
+              </p>
+              <a href="#" class="btn-ghost">see more</a>
+            </article>
+            <article class="service-box">
+              <i class="fa-solid fa-lock"></i>
+              <h3>Food Safety</h3>
+              <p>
+                Food safety is our priority where food safety procedures cover food/beverage prevention from the risk of contamination by chemical, biological, or other substances that threaten health if consumed.
+              </p>
+              <a href="#" class="btn-ghost">see more</a>
+            </article>
+            <article class="service-box">
+              <i class="fa-solid fa-phone-volume"></i>
+              <h3>Good Support</h3>
+              <p>
+                Your satisfaction is our satisfaction, if you have any complaints about our products, you can directly contact our call center.
+              </p>
+              <a href="#" class="btn-ghost">see more</a>
+            </article>
+            <article class="service-box">
+              <i class="fa-solid fa-people-carry-box"></i>
+              <h3>Best Team</h3>
+              <p>
+                We work closely with farmers throughout Indonesia and utilize technology from the planting process to packaging
+              </p>
+              <a href="#" class="btn-ghost">see more</a>
+            </article>
+          </div>
+        </section>
+      </article>
+
+      <article>
+        <section class="product" id="product">
+          <h1 class="section-heading">Our Fresh <span>Products</span></h1>
+          <div class="container-product">
+            <article class="feature-prod">
+              <div class="prod-satisfaction">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+              <img src="assets/banana.jpg" alt="" />
+              <h3>Banana</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <figcaption class="price"><span>Rp15.000</span>Rp10.000</figcaption>
+              <a href="#" class="fa-solid fa-cart-plus btn-add-cart">
+                Add to Cart
+              </a>
+            </article>
+            <article class="feature-prod">
+              <div class="prod-satisfaction">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+              <img src="assets/peas.jpg" alt="" />
+              <h3>Peas</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <figcaption class="price"><span>Rp15.000</span>Rp10.000</figcaption>
+              <a href="#" class="fa-solid fa-cart-plus btn-add-cart">
+                Add to Cart
+              </a>
+            </article>
+            <article class="feature-prod">
+              <div class="prod-satisfaction">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+              <img src="assets/cauliflower.jpg" alt="" />
+              <h3>Cauliflower</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <figcaption class="price"><span>Rp15.000</span>Rp10.000</figcaption>
+              <a href="#" class="fa-solid fa-cart-plus btn-add-cart">
+                Add to Cart
+              </a>
+            </article>
+            <article class="feature-prod">
+              <div class="prod-satisfaction">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+              <img src="assets/mushrooms.jpg" alt="" />
+              <h3>Mushroom</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <figcaption class="price"><span>Rp15.000</span>Rp10.000</figcaption>
+              <a href="#" class="fa-solid fa-cart-plus btn-add-cart">
+                Add to Cart
+              </a>
+            </article>
+            <article class="feature-prod">
+              <div class="prod-satisfaction">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+              <img src="assets/carrots.jpg" alt="" />
+              <h3>Carrot</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <figcaption class="price"><span>Rp15.000</span>Rp10.000</figcaption>
+              <a href="#" class="fa-solid fa-cart-plus btn-add-cart">
+                Add to Cart
+              </a>
+            </article>
+            <article class="feature-prod">
+              <div class="prod-satisfaction">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+              </div>
+              <img src="assets/corn.jpg" alt="" />
+              <h3>Corn</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <figcaption class="price"><span>Rp15.000</span>Rp10.000</figcaption>
+              <a href="#" class="fa-solid fa-cart-plus btn-add-cart">
+                Add to Cart
+              </a>
+            </article>
+          </div>
+        </section>
+      </article>
+
+      <aside class="testimonial" id="testimonial">
+        <h1 class="section-heading">What <span>client say</span> about us</h1>
+        <div class="container-testi">
+          <article class="testimonial-box active">
+            <i class="fa-solid fa-quote-right icon"></i>
+            <figure class="user-profile">
+              <figure class="user-img">
+                <img src="assets/shalsa.jpg" alt="" />
+              </figure>
+              <article class="user-info">
+                <h3 class="user-name">Andi Annisa Shalsa Hardiyanti. AS</h3>
+                <h5 class="about-user">web designer and student</h5>
+                <h6 class="user-destination">Bandung, Jawa Barat</h6>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </article>
+            </figure>
+            <article>
+            <p class="user-desc">
+              <q
+                >Hello everyone, my name is Annisa Shalsa, I'm a final year
+                students of Information Technology at Telkom University</q
+              >
+            </p>
+            </article>
+          </article>
+
+          <article class="testimonial-box">
+            <i class="fa-solid fa-quote-right icon"></i>
+            <figure class="user-profile">
+              <figure class="user-img">
+                <img src="assets/v.jpg" alt="" />
+              </figure>
+              <article class="user-info">
+                <h3 class="user-name">tata</h3>
+                <h5 class="about-user">artist</h5>
+                <h6 class="user-destination">Bandung, Jawa Barat</h6>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </article>
+            </figure>
+            <article>
+              <p class="user-desc">
+              <q
+                >This is best ecommers website that you need to have, this is
+                really helpful and amazing website that enables you to shop
+                foodstuff online on your comfort zone</q
+              >
+            </p>
+            </article>
+            
+          </article>
+
+          <article class="testimonial-box">
+            <i class="fa-solid fa-quote-right icon"></i>
+            <figure class="user-profile">
+              <figure class="user-img">
+                <img src="assets/christina.jpg" alt="" />
+              </figure>
+              <article class="user-info">
+                <h3 class="user-name">christina</h3>
+                <h5 class="about-user">CEO</h5>
+                <h6 class="user-destination">Bandung, Jawa Barat</h6>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </article>
+            </figure>
+            <article>
+            <p class="user-desc">
+              <q
+                >This is best ecommers website that you need to have, this is
+                really helpful and amazing website that enables you to shop
+                foodstuff online on your comfort zone</q
+              >
+            </p>
+            </article>
+          </article>
+
+          <div id="prev-testi">
+            <i class="fa-solid fa-angle-left" onclick="prev_testi()"></i>
+          </div>
+          <div id="next-testi">
+            <i class="fa-solid fa-angle-right" onclick="next_testi()"></i>
+          </div>
+        </div>
+      </aside>
+
+      <footer>
+        <article class="container-footer" id="contact">
+          <article class="footer-box">
+            <h2 class="logo-footer"><img src="assets/logo.png" alt="" />Voodiest</h2>
+            <!-- <h3>Voodiest</h3> -->
+            <p>
+              Voodiest is the number one e-commerce website that satisfies every
+              customer's needs. From this website, you can buy all of your
+              foodstuffs without leaving your home
+            </p>
+          </article>
+
+          <article class="footer-box">
+            <h3>Find us</h3>
+            <p><i class="fa-solid fa-phone"></i>+62343824264</p>
+            <p><i class="fa-solid fa-envelope"></i>voodiest@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i>Bandung, Indonesia</p>
+          </article>
+
+          <article class="footer-box">
+            <h3>Follow</h3>
+            <a href="#" class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="fa-brands fa-youtube"></i></a>
+          </article>
+        </section>
+
+        <article class="final-footer">
+          <h2>Voodiest &copy;2022 All Right Reserved</h2>
+        </article>
+      </footer>
+    </main>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
